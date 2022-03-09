@@ -2,7 +2,11 @@
   "name": "Abhi-project",
   "source": {
     "type": "S3",
-    "location": "abhi-pipeline-project/pipeline-input/src"
+    "location": "abhi-pipeline-input/src/"
+  },
+  "artifacts": {
+    "type": "S3",
+    "location": "abhi-pipeline-output"
   },
   "environment": {
     "type": "LINUX_CONTAINER",

@@ -43,7 +43,7 @@ phases:
       - curl -H "X-JFrog-Art-Api:AKCp8kr1Eiw1YiVLxRU2ouLDEit83rYKEih1kuq6o8vJhRru7fQUTzBHVPW6hhgxhFowVDihV" -T target/*.jar "https://abhi9491.jfrog.io/artifactory/abhi-pipelines-generic-local/"
       # - jf rt upload --flat=false *.* https://priar.jfrog.io/artifactory/priar
       # - ./jfrog rt upload --flat=false *.* $ARTIFACTORY_MVN_REPO
-      - aws s3 sync . s3://abhi-pipeline-project/pipeline-output/
+      - aws s3 sync . s3://abhi-pipeline-input/src/
       
 artifacts:
     files:
